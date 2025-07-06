@@ -1,0 +1,209 @@
+.tour-container {
+  margin: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+}
+/* SEARCH BAR */
+.tour-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+.tour-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  background-color: #f9f9f9;
+  border-radius: 30px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  flex-grow: 1;
+  min-width: 250px;
+  max-width: 500px;
+}
+
+.tour-search-bar input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: transparent;
+  flex-grow: 1;
+}
+
+.tour-icon {
+  color: #444;
+  font-size: 1.2rem;
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  color: #444;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.tenant-img{
+    width: 50px;
+}
+.tour-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0b2b63;
+  margin-bottom: 20px;
+}
+
+.tour-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.tour-table thead {
+  background-color: #f1f5f9;
+}
+
+.tour-table th,
+.tour-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+.tour-table th {
+  color: #0b2b63;
+  font-weight: 600;
+}
+
+.tour-table tbody tr:hover {
+  background-color: #f9fafb;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.tour-avatar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tour-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tour-avatar span {
+  font-weight: 500;
+  color: #333;
+}
+
+.status-pill {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+  width: max-content;
+}
+
+.status-active {
+  background-color: #e0f7e9;
+  color: #2e7d32;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-overdue {
+  background-color: #fdecea;
+  color: #c53030;
+}
+
+.status-renewal {
+  background-color: #dbeafe;
+  color: #1e3a8a;
+}
+
+@media (min-width: 885px) {
+  .tour-table-responsive {
+    display: block;
+  }
+  .tour-card {
+    display: none;
+  }
+}
+
+@media (max-width: 884px) {
+   .tour-top {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+.tour-top .top-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 1rem;
+}
+.t-icons{
+  display: flex;
+  gap: 2rem;
+  margin-left: 6rem;
+}
+  .tour-table {
+    display: none;
+  }
+  .tour-card {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  .tour-card-row {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .tenant-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .tenant-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media (max-width: 430px) {
+  .t-icons{
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  /* margin-left: 5rem; */
+}
+.user-data{
+  display: none;
+}
+}

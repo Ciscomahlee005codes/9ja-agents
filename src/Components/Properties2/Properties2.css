@@ -1,0 +1,181 @@
+.property-container2 {
+  background-color: white;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.property-container2 h2 {
+  margin-bottom: 20px;
+  color: #13118a;
+  font-size: 24px;
+  font-weight: bold;
+}
+.tops2{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.button-container button{
+  background-color: #0b08b8;
+  color: aliceblue;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 15px 25px;
+  cursor: pointer;
+}
+.button-container button:hover{
+  opacity: 0.6;
+  transition: 0.6s;
+}
+.property-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+/* SEARCH BAR */
+.property-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  background-color: #f9f9f9;
+  border-radius: 30px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  flex-grow: 1;
+  min-width: 250px;
+  max-width: 500px;
+}
+
+.property-search-bar input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: transparent;
+  flex-grow: 1;
+}
+
+.property-icon {
+  color: #444;
+  font-size: 1.2rem;
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  color: #444;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.house-card {
+  background: #f9f9ff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.house-card:hover {
+  transform: translateY(-5px);
+}
+
+.house-image {
+  width: 100%; 
+  height: 180px; 
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+.house-info {
+  text-align: center;
+}
+
+.house-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.house-category {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+.home-swiper-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+
+.home-swiper-wrapper .swiper-pagination {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.home-swiper-wrapper .swiper-pagination-bullet {
+  background-color: #13118a !important;
+  opacity: 0.6;
+}
+
+.home-swiper-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+@media (max-width: 884px) {
+  .property-top {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+.property-top .top-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 1rem;
+}
+.t-icons{
+  display: flex;
+  gap: 2rem;
+  margin-left: 6rem;
+}
+}
+@media (max-width: 430px) {
+  .t-icons{
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  /* margin-left: 5rem; */
+}
+.user-data{
+  display: none;
+}
+}

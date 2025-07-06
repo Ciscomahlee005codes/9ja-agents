@@ -1,0 +1,89 @@
+.settings-container {
+  padding: 2rem;
+  background-color: #f9f9fb;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.settings-container h2 {
+  color: #0b2b63;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.settings-form h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.settings-form label {
+  font-size: 14px;
+  color: #444;
+  font-weight: 500;
+}
+
+.settings-form input[type="text"],
+.settings-form input[type="email"],
+.settings-form input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.save-btn {
+  background-color: #0b2b63;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.save-btn:hover {
+  background-color: #09224d;
+}
+
+.danger-zone {
+  margin-top: 2rem;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+
+.delete-btn {
+  background-color: #d9534f;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #c9302c;
+}
+
+.dark-mode {
+  background-color: #121212 !important;
+  color: #f4f4f4;
+}
+
+.dark-mode input {
+  background-color: #1e1e1e;
+  color: white;
+  border-color: #444;
+}

@@ -1,0 +1,144 @@
+.request2{
+    margin: 30px;
+}
+.request-container2 {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.request-container h2 {
+  margin-bottom: 20px;
+  color: #13118a;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.request-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.request-table th {
+  text-align: left;
+  padding-bottom: 10px;
+  color: #666;
+}
+
+.request-table td {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.completed {
+  background-color: #e6f9ec;
+  color: #2e8b57;
+}
+
+.pending {
+  background-color: #fff4e5;
+  color: #d17f00;
+}
+.request-row {
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.request-row:hover {
+  background-color: #e2e4f0;
+}
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search-bar:focus {
+  border-color: #13118a;
+}
+
+.no-results {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  font-style: italic;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.approve-btn, .reject-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.approve-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.reject-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.approve-btn:hover {
+  background-color: #45a045;
+}
+
+.reject-btn:hover {
+  background-color: #e53935;
+}
+.mobile-view {
+  display: none;
+}
+@media (max-width: 540px) {
+  .desktop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
+  }
+
+  .mobile-request-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    font-size: 14px;
+  }
+
+  .mobile-request-card p {
+    margin: 5px 0;
+  }
+
+  .mobile-request-card .status {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 12px;
+  }
+}

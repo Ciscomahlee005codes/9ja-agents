@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f7fa;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  background: #e9eef5;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.input-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+}
+.input-field2 {
+  background-color: transparent;
+  border: none;
+}
+
+.input-field i {
+  color: #888;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+.input-field input,
+.input-field select {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  color: #333;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper .select-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #555;
+  font-size: 1.3rem;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #0b2b63;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #083072;
+}
+
+.switch-text {
+  text-align: center;
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.switch-text span {
+  color: #0b2b63;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* 📱 Responsive tweaks */
+@media (max-width: 600px) {
+  .form-wrapper {
+    padding: 1.5rem 1rem;
+  }
+
+  .form-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 0.8rem;
+  }
+
+  .input-field i {
+    font-size: 1rem;
+  }
+
+  .switch-text {
+    font-size: 0.85rem;
+  }
+}

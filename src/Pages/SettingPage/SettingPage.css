@@ -1,0 +1,10 @@
+.setting-layout {
+  display: flex;
+}
+
+.setting-content {
+  margin-left: 250px; /* same as sidebar width */
+  width: calc(100% - 250px);
+  padding: 0;
+  overflow-x: hidden;
+}

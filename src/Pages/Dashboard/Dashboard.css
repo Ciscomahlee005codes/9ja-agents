@@ -1,0 +1,40 @@
+/* src/pages/Dashboard.css */
+
+.dashboard-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: #e4e0e0;
+}
+
+.dashboard-content {
+  margin-left: 250px; /* same as sidebar width */
+  width: calc(100% - 250px);
+  padding: 0;
+  overflow-x: hidden;
+}
+.middle-level{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 20px;
+}
+@media (max-width: 1280px) {
+  .middle-level{
+   margin: 10px;
+  padding: 5px;
+}
+}
+@media (max-width: 1114px) {
+  .middle-level{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  gap: 30px;
+}
+}
+@media screen and (max-width: 820px) {
+  .dashboard-content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
