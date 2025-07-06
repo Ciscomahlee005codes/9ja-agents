@@ -12,7 +12,9 @@
   z-index: 100;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
 }
-
+.sideBar-container h2{
+  margin-left: 4rem;
+}
 .sideBar-container.closed {
   transform: translateX(-100%);
 }
